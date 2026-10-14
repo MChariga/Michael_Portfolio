@@ -1,0 +1,803 @@
+{
+ "site": {
+  "name": "Michael Chariga",
+  "full": "Okoth Michael Chariga",
+  "tagline": "Research, Data & Evidence",
+  "url": "https://YOUR-DOMAIN",
+  "email": "okothmichael018@gmail.com",
+  "github": "https://github.com/MChariga",
+  "linkedin": "https://www.linkedin.com/in/michael-chariga-b654a61a1/",
+  "location": "Kakamega, Kenya",
+  "cv": "Michael_Chariga_CV_Oct_2026.pdf",
+  "headline": "Research, Evaluation & Data Systems Specialist",
+  "intro": "Research, evaluation and data systems specialist with five years of experience across Kenya and Tanzania. I turn programme questions into field-ready tools, trained data teams, clean datasets and dashboards, and write findings that decision makers can use.",
+  "about": "I am a research and evaluation specialist with five years of experience in monitoring, evaluation and learning (MEL) systems, participatory research and data-driven programme design across Kenya and Tanzania. I work across the whole cycle, from instruments and sampling to training field teams, building data quality systems and dashboards, and writing findings for non-technical readers. So far that work has been in education, agriculture and parenting programmes, and I am keen to apply the same methods to new questions and sectors.",
+  "sub": "I design the evidence behind programmes: research methods, data systems and dashboards that teams can actually use.",
+  "cv_view": "Michael_Chariga_CV_Oct_2026.pdf",
+  "open_to": "Open to roles, consultancy and collaborations",
+  "org": "INNODEMS"
+ },
+ "stats": [
+  [
+   "10",
+   "agroecology partner organisations supported"
+  ],
+  [
+   "1,000+",
+   "farmers tracked on R Shiny dashboards"
+  ],
+  [
+   "13",
+   "maths camps evaluated, 3,000+ participants"
+  ],
+  [
+   "2",
+   "co-authored maths camp papers"
+  ]
+ ],
+ "projects": [
+  {
+   "type": "report",
+   "area": "Agriculture",
+   "title": "Field Assessment Report: Improving Farmer Training on AE Practices",
+   "img": "card-field-report.jpg",
+   "tags": [
+    "Endline evaluation",
+    "Co-author",
+    "CFHF"
+   ],
+   "desc": "Endline evaluation of one-week agroecology training with 10 partner organisations across 42 sub-counties in western Kenya. 223 farmers and 63 practices assessed; 48 practices rose. Co-authored with Muchugia Susan for the Kenya Agroecology Hub, funded by the Conservation Food and Health Foundation.",
+   "link": "reports/field-assessment-report.pdf",
+   "label": "Read the report (PDF)"
+  },
+  {
+   "type": "dashboard",
+   "title": "Farmer Practice Dashboard",
+   "img": "card-farmer-dashboard.jpg",
+   "tags": [
+    "MEL",
+    "Baseline",
+    "Endline"
+   ],
+   "desc": "Baseline and endline comparison of agroecological practices for the CFHF evaluation.",
+   "link": "https://github.com/MChariga/cfhf-farmer-practice-dashboard-Baseline-Endline-",
+   "label": "View code on GitHub",
+   "area": "Agriculture"
+  },
+  {
+   "type": "dashboard",
+   "title": "CFHF Farmer Dashboard",
+   "tags": [
+    "Streamlit",
+    "Python",
+    "MEL"
+   ],
+   "desc": "Interactive Streamlit dashboard for exploring the CFHF farmer evaluation data.",
+   "link": "https://cfhfdashboard.streamlit.app/",
+   "label": "Open live dashboard",
+   "area": "Agriculture",
+   "img": "card-farmer-practice.jpg",
+   "note": "Preview: chart from the CFHF baseline and endline data"
+  },
+  {
+   "type": "dashboard",
+   "title": "Termite FRN Dashboard and Map",
+   "tags": [
+    "R Shiny",
+    "Leaflet",
+    "Geospatial"
+   ],
+   "desc": "Shiny dashboard and publication-ready map tracking termite attack, crop vigour and plant loss across four growth stages in western Kenya.",
+   "link": "https://github.com/MChariga/Termite-FRN-Dashboard-and-Map",
+   "label": "View code on GitHub",
+   "area": "Agriculture"
+  },
+  {
+   "type": "dashboard",
+   "title": "Fermented Feed Lab Analysis",
+   "tags": [
+    "R Shiny",
+    "Lab analysis",
+    "Farmer research"
+   ],
+   "desc": "Interactive dashboard for lab results from farmer-led fermented feed trials.",
+   "link": "https://ae-hub-ea-dashboard.shinyapps.io/Fermented_Lab_Analysis/",
+   "label": "Open live dashboard",
+   "area": "Agriculture"
+  },
+  {
+   "type": "report",
+   "title": "Tephrosia for Livestock Parasites: Farmer Practices",
+   "img": "card-tephrosia-report.jpg",
+   "tags": [
+    "FGDs",
+    "Qualitative",
+    "Author"
+   ],
+   "desc": "Six focus group discussions with 58 farmers across five Migori sub-counties (13 to 17 January 2025), following up the December 2024 farmer survey for the Rural Farmers Research Network. Farmers found tephrosia effective against livestock parasites, best used as prevention; ratio 1:5 worked best for most, while 1:3 was risky for young animals. Prepared by Michael Chariga.",
+   "link": "reports/tephrosia-fgd-report.pdf",
+   "label": "Read the report (PDF)",
+   "area": "Agriculture"
+  },
+  {
+   "type": "report",
+   "title": "Fermented Feeds Lab Results: CoP Presentation",
+   "img": "card-fermented-feeds.jpg",
+   "tags": [
+    "Presentation",
+    "Nutrient analysis",
+    "Farmer Research Network"
+   ],
+   "desc": "Lab nutrient results for fermented poultry feeds from five organisations (CRANE, MHAC, RFRN, RODI, SOFDI), on a dry matter basis and checked against optimal ranges. Crude protein and digestible energy were low for most farmers; calcium and fibre need review in RFRN and SOFDI. Presented at the 2026 Kenya Agroecology Hub Community of Practice meeting, Kitale.",
+   "area": "Agriculture",
+   "link": "reports/fermented-feeds-lab-results.pdf",
+   "label": "View the slides (PDF)"
+  },
+  {
+   "type": "report",
+   "title": "Student Learning and a Farmer Research Network",
+   "img": "card-migori-report.jpg",
+   "tags": [
+    "Pilot study",
+    "Education",
+    "Co-author"
+   ],
+   "desc": "Six-month pilot (two school terms) with 171 fifth-grade pupils in Kurutiyange and Naora, Kuria West, testing whether pupils could help a farmer research network collect data while building practical, CBC-aligned skills. The hypothesis that pupils would collect better data than their parents was rejected, but the learning gains were clear. Co-authored with Tekviah Munandi, Esther Njeri and Evans Odhiambo.",
+   "link": "reports/migori-school-pilot-report.pdf",
+   "label": "Read the report (PDF)",
+   "area": "Education"
+  },
+  {
+   "type": "code",
+   "title": "Termite FRN KoboToolbox Pipeline",
+   "tags": [
+    "R",
+    "KoboToolbox API",
+    "Data cleaning"
+   ],
+   "desc": "R pipeline that pulls multi-version KoboToolbox forms, flattens nested repeat groups into analysis-ready wide data, removes duplicates and exports stage-specific Excel workbooks for the 2025 Long Rain and Short Rain seasons.",
+   "link": "https://github.com/MChariga/Termite-FRN-KoboToolbox-Pipeline",
+   "label": "View code on GitHub",
+   "area": "Agriculture"
+  }
+ ],
+ "pubs": [
+  {
+   "title": "Facilitating a Positive Shift in Students' Engagement with Mathematics: Insights from 21 Maths Camps",
+   "venue": "AFRICME7 Book of Conference Proceedings",
+   "year": "2025",
+   "kind": "Conference paper",
+   "link": "https://www.researchgate.net/publication/400141238_AFRICME7_Book_of_Conference_Proceedings_-_30_Nov_2025_Final"
+  },
+  {
+   "title": "From Players to Pedagogues: The AMI Maths Camp Model as a Catalyst for Teacher Professional Learning",
+   "venue": "Mathematics Teacher Education and Development",
+   "year": "Awaiting publication",
+   "kind": "Accepted"
+  },
+  {
+   "title": "Digital Math Activities and Parent-Child Playful Learning with the Early Family Math (EFM) App",
+   "venue": "Co-authored paper",
+   "year": "",
+   "kind": "Co-authored",
+   "link": "https://www.researchgate.net/publication/409445320_Digital_Math_Activities_and_Parent-Child_Playful_Learning_with_the_Early_Family_Math_EFM_App"
+  }
+ ],
+ "awards": [
+  {
+   "title": "KENET Conference Funding",
+   "by": "Travel grant (USD 2,000) to present at AFRICME7, Johannesburg",
+   "year": "2025",
+   "link": "conference.html"
+  },
+  {
+   "title": "Aspire Leaders Program",
+   "by": "Aspire Institute, 40 hours of coursework",
+   "year": "2025",
+   "link": "about.html"
+  }
+ ],
+ "education": [
+  [
+   "BSc Mathematics with IT",
+   "Masinde Muliro University of Science and Technology, 2022"
+  ],
+  [
+   "Postgraduate Diploma in Leadership and Accountability",
+   "Open University of Kenya, in progress"
+  ],
+  [
+   "Aspire Leaders Program",
+   "Aspire Institute, 2025"
+  ]
+ ],
+ "skills": [
+  "Monitoring and evaluation",
+  "Baseline, midline and endline studies",
+  "Randomised controlled trials",
+  "Survey design and sampling",
+  "R, RShiny, Python, SQL",
+  "KoboToolbox, ODK, SurveyCTO, CommCare",
+  "Power BI and Excel",
+  "Participatory research"
+ ],
+ "interests": [
+  "Agroecology and food systems",
+  "Education research",
+  "Impact evaluation",
+  "Data systems for development"
+ ],
+ "conference": {
+  "name": "AFRICME7",
+  "full": "Seventh Africa Regional Congress of the International Commission on Mathematical Instruction",
+  "host": "Wits School of Education, University of the Witwatersrand, Johannesburg, South Africa",
+  "year": "2025",
+  "funder": "KENET",
+  "funding": "KENET awarded me USD 2,000 to travel to Johannesburg and present at AFRICME7.",
+  "role": "I presented findings co-authored with the Africa Maths Initiative team, drawn from the pre/post evaluations I designed and ran for residential maths camps in Kenya and Tanzania (13 camps, 3,000+ participants).",
+  "title": "",
+  "dates": "",
+  "photo": "conference.jpg",
+  "outcomes": [
+   "Presented co-authored evaluation findings at AFRICME7",
+   "Paper published in the AFRICME7 Book of Conference Proceedings (Facilitating a Positive Shift in Students' Engagement with Mathematics)",
+   "Funded by a KENET conference grant",
+   "Second co-authored paper accepted by Mathematics Teacher Education and Development, awaiting publication"
+  ]
+ },
+ "areas": [
+  {
+   "id": "education",
+   "name": "Education",
+   "color": "edu",
+   "img": "edu.jpg",
+   "tag": "Africa Maths Initiative, volunteer",
+   "blurb": "Hands-on, gamified maths camps for learners across Kenya and Tanzania, with evaluation built in from the start.",
+   "points": [
+    "Designed and facilitated gamified maths lessons at residential and community camps",
+    "Built baseline and endline tools, analysed the data and contributed to camp reports",
+    "Co-authored two maths camp papers and presented the AMI camps at AFRICME7"
+   ]
+  },
+  {
+   "id": "agriculture",
+   "name": "Agriculture",
+   "color": "agri",
+   "img": "agri.jpg",
+   "tag": "Kenya Agroecology Hub partnership",
+   "blurb": "Farmer Research Networks and CRFS grantees in western Kenya, supported end to end from field protocol to dashboard.",
+   "points": [
+    "Directly supported 10 partner organisations working in agroecology",
+    "Kobo tools, enumerator training, field protocols, data cleaning and analysis",
+    "Dashboards in Python, Excel and R Shiny that partners use to track farmers"
+   ]
+  },
+  {
+   "id": "parenting",
+   "name": "Parenting Initiative",
+   "color": "par",
+   "img": "parent.jpg",
+   "tag": "Global Parenting Initiative",
+   "blurb": "Field support for the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania.",
+   "points": [
+    "Supported the field team to collect consent forms from caregivers",
+    "Followed up with participants and documented problems with the ParentApp on their phones",
+    "Resolved issues on the ground so trial data stayed complete and reliable"
+   ]
+  }
+ ],
+ "camps": [
+  [
+   "STEM BootCamp with Project Inspire",
+   "Arusha, Tanzania",
+   ""
+  ],
+  [
+   "Kongoni Community Library camp",
+   "Likuyani, Kakamega, Kenya",
+   "Twice"
+  ],
+  [
+   "Nyahera Girls High School",
+   "Homa Bay, Kenya",
+   ""
+  ],
+  [
+   "Nyarongi community maths camp",
+   "Nyarongi, Kenya",
+   "Twice"
+  ],
+  [
+   "Rombo Girls High School",
+   "Oloitokitok, Kenya",
+   ""
+  ],
+  [
+   "Good Shepherd Minor Seminary",
+   "Marala, Samburu, Kenya",
+   ""
+  ]
+ ],
+ "camps_link": {
+  "Good Shepherd Minor Seminary": "https://goshems.sc.ke/"
+ },
+ "frns": [
+  [
+   "Termite FRN",
+   "2025/26",
+   "Farmer-led trials on termite management, with a KoboToolbox pipeline and a Shiny dashboard and map"
+  ],
+  [
+   "Socio-cultural barriers to agroecology uptake",
+   "",
+   "Farmer research into what holds back adoption of agroecological practices"
+  ],
+  [
+   "Fermented feeds FRN",
+   "",
+   "Farmer-led fermented feed trials with lab nutrient analysis and a results dashboard",
+   "reports/fermented-feeds-lab-results.pdf",
+   "View the lab results"
+  ],
+  [
+   "Improving farmer training on agroecology practices through collaboration and follow-up",
+   "2026",
+   "Kenya Agroecology Hub joint learning activity for the 10 Community of Practice members. Endline covered 223 farmers in 42 sub-counties; I co-authored the Field Assessment Report.",
+   "reports/field-assessment-report.pdf"
+  ]
+ ],
+ "funders": [
+  "CRFS (McKnight Foundation)",
+  "Agroecology Fund",
+  "Conservation Food and Health Foundation"
+ ],
+ "pilot": "I started this work with a six month pilot in Kuria West, Kenya, testing whether school-going pupils could help farmers record data while improving their own learning.",
+ "gallery": [
+  {
+   "file": "g41.jpg",
+   "category": "Education",
+   "caption": "Maths camp session with a full hall of learners"
+  },
+  {
+   "file": "g31.jpg",
+   "category": "Education",
+   "caption": "Camp participants with their certificates"
+  },
+  {
+   "file": "g35.jpg",
+   "category": "Education",
+   "caption": "Facilitating a session at a maths camp"
+  },
+  {
+   "file": "g32.jpg",
+   "category": "Education",
+   "caption": "Whole-group maths camp session"
+  },
+  {
+   "file": "g52.jpg",
+   "category": "Education",
+   "caption": "A lesson in progress at a school-based camp"
+  },
+  {
+   "file": "g53.jpg",
+   "category": "Education",
+   "caption": "Learners working through hands-on activities"
+  },
+  {
+   "file": "g50.jpg",
+   "category": "Education",
+   "caption": "Classroom session during a maths camp"
+  },
+  {
+   "file": "g30.jpg",
+   "category": "Education",
+   "caption": "STEM BootCamp with Project Inspire, Arusha, Tanzania"
+  },
+  {
+   "file": "g29.jpg",
+   "category": "Education",
+   "caption": "At NM-AIST, Arusha, Tanzania"
+  },
+  {
+   "file": "g27.jpg",
+   "category": "Education",
+   "caption": "Presenting a session to participants"
+  },
+  {
+   "file": "g20.jpg",
+   "category": "Education",
+   "caption": "Theory of change planning cards from a workshop"
+  },
+  {
+   "file": "g33.jpg",
+   "category": "Education",
+   "caption": "Computer lab session at the MMUST STEM Center"
+  },
+  {
+   "file": "g00.jpg",
+   "category": "Agriculture",
+   "caption": "Farmer interview in the field"
+  },
+  {
+   "file": "g49.jpg",
+   "category": "Agriculture",
+   "caption": "Recording farmer responses under the trees"
+  },
+  {
+   "file": "g03.jpg",
+   "category": "Agriculture",
+   "caption": "FRN co-creation workshop: farmers planning their research together"
+  },
+  {
+   "file": "g02.jpg",
+   "category": "Agriculture",
+   "caption": "Maize on a participating farmer's plot"
+  },
+  {
+   "file": "g01.jpg",
+   "category": "Agriculture",
+   "caption": "Maize on a farmer research plot"
+  },
+  {
+   "file": "g47.jpg",
+   "category": "Agriculture",
+   "caption": "Household visit during fieldwork"
+  },
+  {
+   "file": "g16.jpg",
+   "category": "Conferences",
+   "caption": "Presenting at AFRICME7, Wits School of Education"
+  },
+  {
+   "file": "g13.jpg",
+   "category": "Conferences",
+   "caption": "Sharing maths camp findings at AFRICME7"
+  },
+  {
+   "file": "g15.jpg",
+   "category": "Conferences",
+   "caption": "AFRICME7 delegate badge, Johannesburg, July 2025"
+  },
+  {
+   "file": "g10.jpg",
+   "category": "Conferences",
+   "caption": "AFRICME7 delegates, Wits University"
+  },
+  {
+   "file": "g08.jpg",
+   "category": "Conferences",
+   "caption": "At the University of the Witwatersrand, Johannesburg"
+  },
+  {
+   "file": "g05.jpg",
+   "category": "Conferences",
+   "caption": "CRFS East and Southern Africa Community of Practice meeting, Kisumu, October 2025"
+  },
+  {
+   "file": "g04.jpg",
+   "category": "Conferences",
+   "caption": "Poster session, October 2025"
+  }
+ ],
+ "books": [],
+ "booking": {
+  "tz": "Africa/Nairobi",
+  "tzlabel": "East Africa Time (UTC+3)",
+  "days": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "start": 9,
+  "end": 17,
+  "notice_hours": 24,
+  "weeks_ahead": 10,
+  "durations": [
+   5,
+   10,
+   15,
+   30,
+   45,
+   60,
+   90,
+   120
+  ],
+  "topics": [
+   "A role or employment opportunity",
+   "A consultancy or project",
+   "A collaboration or partnership",
+   "A quick question",
+   "Something else"
+  ],
+  "endpoint": "",
+  "calcom": "",
+  "default_duration": 15
+ },
+ "cv": {
+  "summary": "Research and impact professional with five years of experience in monitoring, evaluation and learning (MEL) systems, participatory agricultural research and data-driven programme design across Kenya and Tanzania. Coordinates partner organisations, builds data systems that field teams can run, deploys R Shiny dashboards for farmer tracking and co-implements randomised controlled trials with research partners. Co-author of maths education papers and presenter at AFRICME7.",
+  "competencies": [
+   "Monitoring, evaluation and learning (MEL) system design",
+   "Baseline, midline and endline studies",
+   "Randomised controlled trial field support",
+   "Participatory and farmer-led research",
+   "Survey design, sampling and field protocols",
+   "Enumerator training and data quality assurance",
+   "Data cleaning, analysis and reporting",
+   "Dashboards: R Shiny, Streamlit, Power BI, Excel",
+   "Partner coordination and capacity building",
+   "Maths education, curriculum and facilitation"
+  ],
+  "experience": [
+   {
+    "role": "Research & Impact Lead",
+    "org": "INNODEMS",
+    "place": "Kakamega, Kenya",
+    "period": "Present",
+    "bullets": [
+     "Lead MEL and research support across agroecology, education and parenting programmes in Kenya and Tanzania, coordinating multiple partner organisations",
+     "Support the Kenya Agroecology Hub and CRFS grantees in western Kenya, directly supporting 10 partner organisations working in agroecology",
+     "Designed and ran a six month pilot in Kuria West testing whether pupils can support farmers in data recording while improving their learning",
+     "Supported Farmer Research Networks on termite management, socio-cultural barriers to agroecology uptake, fermented feeds, and farmer training and follow-up, funded by CRFS (McKnight), the Agroecology Fund and the Conservation Food and Health Foundation",
+     "Co-authored the Field Assessment Report for the Kenya Agroecology Hub (funded by the Conservation Food and Health Foundation): an endline evaluation of farmer training across 10 partner organisations, 42 sub-counties and 223 farmers, assessing 63 agroecology practices",
+     "Design data collection tools in KoboCollect, train data collectors, prepare field protocols, clean and analyse data, and build dashboards in Python, Excel and R Shiny",
+     "Deployed R Shiny dashboards used to track more than 1,000 farmers and managed the evaluation budget alongside the finance lead",
+     "Supported the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania for the Global Parenting Initiative: collected caregiver consent, followed up participants and resolved app problems on their phones"
+    ]
+   },
+   {
+    "role": "Volunteer Facilitator and Evaluation Support",
+    "org": "Africa Maths Initiative (AMI)",
+    "place": "Kenya and Tanzania",
+    "period": "Ongoing",
+    "bullets": [
+     "Created and facilitated hands-on, gamified maths lessons at camps including the STEM BootCamp with Project Inspire (Arusha), Kongoni (twice), Nyahera Girls, Nyarongi (twice), Rombo Girls and Good Shepherd Minor Seminary",
+     "Designed baseline and endline data collection tools, analysed camp data and contributed to camp reports, covering 13 camps and over 3,000 participants",
+     "Co-authored two maths camp papers and presented the AMI camps at the AFRICME7 conference in Johannesburg",
+     "Supported international volunteers with travel logistics and local planning"
+    ]
+   }
+  ],
+  "education": [
+   [
+    "BSc Mathematics with IT",
+    "Masinde Muliro University of Science and Technology",
+    "2022"
+   ],
+   [
+    "Postgraduate Diploma in Leadership and Accountability",
+    "Open University of Kenya",
+    "In progress"
+   ],
+   [
+    "Aspire Leaders Program",
+    "Aspire Institute",
+    "2025"
+   ]
+  ],
+  "awards": [
+   "KENET conference funding to present at AFRICME7, Wits School of Education, Johannesburg (2025)",
+   "Aspire Leaders Program alumnus (2025)"
+  ],
+  "tools": [
+   "R and R Shiny",
+   "Python and Streamlit",
+   "SQL",
+   "KoboToolbox and KoboCollect",
+   "ODK",
+   "SurveyCTO",
+   "CommCare",
+   "Power BI",
+   "Excel",
+   "Notion",
+   "GitHub"
+  ],
+  "reports": [
+   [
+    "Field Assessment Report: Improving Farmer Training on AE Practices Through Collaboration and Follow-up",
+    "Kenya Agroecology Hub, Manor House Agricultural Centre, with Muchugia Susan, 2026"
+   ],
+   [
+    "Promoting Student Learning in Support of a Farmer Research Network in Migori County: Report on a Pilot Study",
+    "Co-author, with Tekviah Munandi, Esther Njeri and Evans Odhiambo"
+   ],
+   [
+    "Exploring Farmer Practices and Perspectives on Using Tephrosia for Internal and External Livestock Parasite Treatments: Findings from Focus Group Discussions",
+    "Author, Rural Farmers Research Network, January 2025"
+   ],
+   [
+    "Fermented Feeds Research: Lab Results and Nutrient Analysis Report",
+    "Kenya Agroecology Hub Community of Practice presentation, 2026"
+   ]
+  ]
+ },
+ "pilot_link": "reports/migori-school-pilot-report.pdf",
+ "gallery_sections": {
+  "Education": [
+   "Maths camps and workshops",
+   "Hands-on, gamified maths camps and facilitation across Kenya and Tanzania."
+  ],
+  "Agriculture": [
+   "Fieldwork with farmers",
+   "Interviews, focus groups and research plots with farmers in western Kenya."
+  ],
+  "Conferences": [
+   "Conferences and meetings",
+   "Presenting and learning with peers, including AFRICME7 in Johannesburg."
+  ]
+ },
+ "services": {
+  "pillars": [
+   {
+    "name": "Monitoring, Evaluation and Learning",
+    "items": [
+     "Theory of change and results frameworks",
+     "Indicator development and evaluation protocols",
+     "Baseline, midline and endline design",
+     "Learning agendas and data quality systems"
+    ]
+   },
+   {
+    "name": "Digital data systems and dashboards",
+    "items": [
+     "KoboToolbox, ODK and SurveyCTO",
+     "R Shiny, Python and Power BI dashboards",
+     "Automated reporting and data workflows",
+     "Documentation, training and technical handover"
+    ]
+   },
+   {
+    "name": "Research, analysis and reporting",
+    "items": [
+     "Participatory and farmer-led research",
+     "Field coordination and research implementation",
+     "Quantitative and qualitative analysis",
+     "Evaluation reports, policy briefs and learning products"
+    ]
+   }
+  ],
+  "team_areas": [
+   "MEL and evaluation",
+   "Survey and data systems",
+   "Dashboards and data engineering",
+   "Research and analysis",
+   "Training and facilitation",
+   "Something else"
+  ],
+  "scope": {
+   "kicker": "Every project is scoped",
+   "title": "Every assignment is scoped with you",
+   "text": "Sample size, coverage, fieldwork and reporting shape both the work and the budget, so every project starts with a conversation about what you need.",
+   "items": [
+    [
+     "Baseline, midline and endline evaluations",
+     "Design, sample size and fieldwork shape the work"
+    ],
+    [
+     "Large multi-partner programmes",
+     "Partners, coverage and coordination shape the work"
+    ],
+    [
+     "Advanced statistical modelling",
+     "The data and the methods shape the work"
+    ]
+   ],
+   "foot": "Travel, fieldwork and other project expenses are discussed as part of the scope."
+  }
+ },
+ "pricing_archive": {
+  "packages": [
+   {
+    "name": "MEL framework starter",
+    "price": "KSh 45,000 to 75,000",
+    "duration": "3 to 5 working days",
+    "includes": [
+     "Theory of change or results chain",
+     "Results framework and indicator matrix",
+     "Indicator definitions and data sources",
+     "Initial monitoring and learning recommendations"
+    ],
+    "note": "Best for small programmes. Complex multi-partner programmes are quoted separately."
+   },
+   {
+    "name": "Digital survey system",
+    "price": "KSh 30,000 to 60,000",
+    "duration": "3 to 5 working days",
+    "includes": [
+     "One KoboToolbox, ODK or SurveyCTO form",
+     "Skip logic, validation and calculations",
+     "Testing and revisions",
+     "Enumerator guidance and data-quality checklist"
+    ],
+    "note": "Excludes survey licences, large-scale data collection, enumerator wages and field travel."
+   },
+   {
+    "name": "Programme dashboard",
+    "price": "KSh 55,000 to 120,000",
+    "duration": "5 to 10 working days",
+    "includes": [
+     "One defined dashboard",
+     "Data preparation and validation",
+     "Up to two rounds of revisions",
+     "Basic documentation and handover"
+    ],
+    "note": "Automated pipelines, multiple live sources, hosting and access controls are scoped separately."
+   },
+   {
+    "name": "Data analysis and findings brief",
+    "price": "KSh 35,000 to 65,000",
+    "duration": "4 to 7 working days",
+    "includes": [
+     "Cleaning and validation of one supplied dataset",
+     "Descriptive analysis and agreed comparisons",
+     "Tables and charts",
+     "Short findings report and recommendations"
+    ],
+    "note": "Advanced modelling, complex qualitative coding and very large datasets are quoted separately."
+   },
+   {
+    "name": "MEL or data training",
+    "price": "KSh 25,000 to 40,000 per day",
+    "duration": "One full training day",
+    "includes": [
+     "Facilitated training",
+     "Practical exercises",
+     "Training materials",
+     "Feedback and participant learning assessment"
+    ],
+    "note": "Venue, travel, accommodation and catering are additional."
+   }
+  ],
+  "extras": [
+   {
+    "name": "Evaluation design package",
+    "price": "KSh 80,000 to 150,000",
+    "duration": "Scoped with you",
+    "includes": [
+     "Evaluation protocol and matrix",
+     "Sampling approach",
+     "Data collection plan",
+     "Analysis framework"
+    ],
+    "note": "Covers the design only, not conducting the evaluation or collecting field data."
+   },
+   {
+    "name": "Monthly MEL and data support",
+    "price": "KSh 50,000 to 100,000 per month",
+    "duration": "Agreed hours each month",
+    "includes": [
+     "Dashboard maintenance",
+     "Data quality checks",
+     "Reporting support",
+     "Technical advice"
+    ],
+    "note": "Hours, response times and exclusions are set out in the agreement."
+   }
+  ],
+  "rates": [
+   [
+    "Technical advice",
+    "$30"
+   ],
+   [
+    "Survey and data systems",
+    "$35"
+   ],
+   [
+    "Data analysis and reporting",
+    "$40"
+   ],
+   [
+    "MEL design and dashboards",
+    "$50"
+   ]
+  ],
+  "terms": [
+   "Small projects: 50% on commencement and 50% on delivery.",
+   "Larger projects: payments tied to inception, draft deliverables and final approval.",
+   "Two reasonable revision rounds are included; extra changes outside the agreed scope are chargeable.",
+   "Invoicing currency, payment method and taxes are agreed before work starts."
+  ]
+ }
+}

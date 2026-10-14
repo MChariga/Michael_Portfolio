@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Quote estimator (private)</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:560px;margin:40px auto;padding:0 20px;color:#14213d}h1{font:600 26px Georgia,serif;color:#0b2545}label{display:block;margin:14px 0 4px;font-size:14px;color:#55627a}input,select{width:100%;padding:10px;border:1px solid #dbe3ee;border-radius:8px;font:inherit}
+.o{background:#eaf1f9;border-radius:10px;padding:16px;margin-top:20px}.o div{display:flex;justify-content:space-between;padding:4px 0}.o .t{border-top:1px solid #c9d6e6;margin-top:6px;padding-top:10px;font-weight:600;font-size:18px}button{margin-top:14px;padding:10px 18px;border:0;border-radius:999px;background:#0b2545;color:#fff;font:inherit;cursor:pointer}small{color:#55627a}</style></head><body>
+<h1>Estimate your project fee</h1><p><small>Private tool for your own quoting. Not part of the public site.</small></p>
+<label>Estimated working days</label><input id="d" type="number" min="1" max="120" value="16">
+<label>Professional fee per day (KSh)</label><select id="r"><option>20000</option><option>25000</option><option selected>30000</option><option>35000</option><option>40000</option></select>
+<label>Estimated reimbursable expenses (KSh)</label><input id="e" type="number" min="0" value="10000">
+<label>Contingency for uncertainty (on fees only)</label><select id="c"><option value="0">0%</option><option value="0.1" selected>10%</option><option value="0.2">20%</option></select>
+<div class="o"><div><span>Professional fees</span><b id="f"></b></div><div><span>Contingency</span><b id="k"></b></div><div><span>Expenses</span><b id="x"></b></div><div class="t"><span>Estimated total</span><b id="T"></b></div></div>
+<button id="cp">Copy estimate</button> <small id="m"></small><p><small>Illustrative estimate before applicable taxes. Treat contingency as an internal allowance or a disclosed provision for uncertain scope. For a defined fixed-price package, build delivery risk into the quoted price instead.</small></p>
+<script>const $=i=>document.getElementById(i),n=v=>'KSh '+Math.round(v).toLocaleString('en-KE');let txt='';
+function go(){const d=+$('d').value||0,r=+$('r').value,e=+$('e').value||0,c=+$('c').value,f=d*r,k=f*c,T=f+k+e;$('f').textContent=n(f);$('k').textContent=n(k);$('x').textContent=n(e);$('T').textContent=n(T);
+txt=`Estimate: ${d} days x ${n(r)} = ${n(f)}; contingency ${c*100}% = ${n(k)}; expenses ${n(e)}; total ${n(T)} (before taxes)`}
+['d','r','e','c'].forEach(i=>$(i).oninput=go);$('cp').onclick=async()=>{try{await navigator.clipboard.writeText(txt);$('m').textContent='Copied'}catch(_){$('m').textContent=txt}};go();</script></body></html>
