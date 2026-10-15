@@ -51,6 +51,47 @@
    "label": "Read the report (PDF)"
   },
   {
+   "type": "report",
+   "area": "Agriculture",
+   "title": "Agroecology Planning Workshop: Co-creation Documentation",
+   "img": "card-workshop-doc.jpg",
+   "tags": [
+    "Co-creation workshop",
+    "Documentation",
+    "CFHF"
+   ],
+   "desc": "Documentation of the planning workshop at Manor House Agricultural Centre, Kitale (August 2025), where farmers, extension officers and heads of ten partner organisations reviewed joint learning, refined the five-day farmer training and co-designed the tool for tracking adoption. I presented the assessment tool and prepared the documentation with Susan Muthoni.",
+   "link": "reports/agroecology-planning-workshop-documentation.pdf",
+   "label": "Read the documentation (PDF)"
+  },
+  {
+   "type": "report",
+   "area": "Education",
+   "title": "Kenya Math Camp Report, May 2023",
+   "img": "card-math-camp-report.jpg",
+   "tags": [
+    "Maths camp",
+    "Facilitator",
+    "Kongoni"
+   ],
+   "desc": "Report on the five-day camp at Kongoni Community Library, Likuyani, Kakamega (1 to 5 May 2023): 50 students from 11 secondary schools, with sessions from programming and robotics to data science and chess. I was one of the facilitators.",
+   "link": "reports/kenya-math-camp-report-may-2023.pdf",
+   "label": "Read the report (PDF)"
+  },
+  {
+   "type": "report",
+   "area": "Education",
+   "title": "Nyahera Girls' Math Camp: SAMI Feature",
+   "tags": [
+    "SAMI feature",
+    "Maths camp",
+    "Homa Bay"
+   ],
+   "desc": "Feature by Supporting African Maths Initiatives (1 November 2023) on the three-day camp at Nyahera Girls', Oyugis, Homa Bay: 121 students from 7 schools, run by the African Maths Initiative with Strathmore Institute of Mathematical Sciences and funding from the International Science Programme. I was part of the facilitation team.",
+   "link": "https://samicharity.co.uk/blog-posts/unlocking-the-world-of-mathematics-a-journey-of-discovery-at-nyahera-girls-math-camp",
+   "label": "Read the feature"
+  },
+  {
    "type": "dashboard",
    "title": "Farmer Practice Dashboard",
    "img": "card-farmer-dashboard.jpg",
@@ -277,12 +318,12 @@
    "name": "Parenting Initiative",
    "color": "par",
    "img": "parent.jpg",
-   "tag": "Global Parenting Initiative",
-   "blurb": "Field support for the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania.",
+   "tag": "Global Parenting Initiative with NIMR Mwanza",
+   "blurb": "Field support for the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania, in collaboration with the National Institute for Medical Research (NIMR), Mwanza Centre.",
    "points": [
+    "Worked in collaboration with the National Institute for Medical Research (NIMR), Mwanza Centre",
     "Supported the field team to collect consent forms from caregivers",
-    "Followed up with participants and documented problems with the ParentApp on their phones",
-    "Resolved issues on the ground so trial data stayed complete and reliable"
+    "Followed up with participants, documented problems with the ParentApp on their phones and resolved them where possible"
    ]
   }
  ],
@@ -319,7 +360,9 @@
   ]
  ],
  "camps_link": {
-  "Good Shepherd Minor Seminary": "https://goshems.sc.ke/"
+  "Good Shepherd Minor Seminary": "https://goshems.sc.ke/",
+  "Kongoni Community Library camp": "reports/kenya-math-camp-report-may-2023.pdf",
+  "Nyahera Girls High School": "https://samicharity.co.uk/blog-posts/unlocking-the-world-of-mathematics-a-journey-of-discovery-at-nyahera-girls-math-camp"
  },
  "frns": [
   [
@@ -543,7 +586,7 @@
      "Co-authored the Field Assessment Report for the Kenya Agroecology Hub (funded by the Conservation Food and Health Foundation): an endline evaluation of farmer training across 10 partner organisations, 42 sub-counties and 223 farmers, assessing 63 agroecology practices",
      "Design data collection tools in KoboCollect, train data collectors, prepare field protocols, clean and analyse data, and build dashboards in Python, Excel and R Shiny",
      "Deployed R Shiny dashboards used to track more than 1,000 farmers and managed the evaluation budget alongside the finance lead",
-     "Supported the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania for the Global Parenting Initiative: collected caregiver consent, followed up participants and resolved app problems on their phones"
+     "Supported the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania, for the Global Parenting Initiative, in collaboration with the National Institute for Medical Research (NIMR), Mwanza Centre: collected caregiver consent, followed up participants and resolved app problems on their phones"
     ]
    },
    {
@@ -798,6 +841,33 @@
    "Larger projects: payments tied to inception, draft deliverables and final approval.",
    "Two reasonable revision rounds are included; extra changes outside the agreed scope are chargeable.",
    "Invoicing currency, payment method and taxes are agreed before work starts."
+  ]
+ },
+ "featured": [
+  "Field Assessment Report: Improving Farmer Training on AE Practices",
+  "Kenya Math Camp Report, May 2023",
+  "Farmer Practice Dashboard"
+ ],
+ "docs": {
+  "education": [
+   [
+    "Kenya Math Camp Report, May 2023 (Kongoni Community Library)",
+    "reports/kenya-math-camp-report-may-2023.pdf"
+   ],
+   [
+    "Nyahera Girls' Math Camp feature by SAMI, November 2023",
+    "https://samicharity.co.uk/blog-posts/unlocking-the-world-of-mathematics-a-journey-of-discovery-at-nyahera-girls-math-camp"
+   ]
+  ],
+  "agriculture": [
+   [
+    "Agroecology planning workshop documentation, Kitale, August 2025",
+    "reports/agroecology-planning-workshop-documentation.pdf"
+   ],
+   [
+    "Field Assessment Report: Improving Farmer Training on AE Practices",
+    "reports/field-assessment-report.pdf"
+   ]
   ]
  }
 }

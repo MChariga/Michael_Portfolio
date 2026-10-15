@@ -106,13 +106,13 @@ def page(fn, title, desc, body, og="og.jpg", scripts=(), extra_ld=None, preload=
 
 
 def profile():
-    return f'''<section class="hero"><div class="cover"><img src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="Maths camp learners, a farmer interview in the field and AFRICME7 delegates" fetchpriority="high" decoding="async"><div class="cover-text"><small>Research &middot; Evidence &middot; Data</small><b>Evidence that helps programmes learn.</b><span>Kenya &middot; Tanzania</span></div></div>
+    return f'''<section class="hero"><div class="pc"><div class="cover"><img src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="Maths camp learners, a farmer interview in the field and AFRICME7 delegates" fetchpriority="high" decoding="async"><div class="cover-text"><small>Research &middot; Evidence &middot; Data</small><b>Evidence that helps programmes learn.</b><span>Kenya &middot; Tanzania</span></div></div>
 <div class="hbody"><div class="pl"><img class="avatar" src="assets/profile.jpg" width="360" height="360" alt="Portrait of {e(S["full"])}">
 <div class="pmain"><h1>{S["full"]}</h1><p class="hl">{e(S["headline"])}</p><p class="sub">{e(S["sub"])}</p>
 <p class="meta">{e(S["location"])} &middot; <a href="mailto:{S["email"]}" data-mail>Contact info</a> &middot; <a href="{S["github"]}">GitHub</a> &middot; <a href="{S["linkedin"]}">LinkedIn</a></p>
 <p class="open"><span></span>{e(S["open_to"])}</p>
 <div class="btns"><a class="btn" href="book.html">Book a call</a><a class="btn o" href="cv.html">View CV</a><a class="btn o" href="{S["cv"]}" download>Download CV</a></div></div></div>
-<aside class="glance dk"><span class="eyebrow">At a glance</span><ul class="sc-r"><li>{svg("layers")}<div><b>Worked across</b><span>Education, agriculture and parenting programmes</span></div></li><li>{svg("bars")}<div><b>Methods</b><span>MEL, RCT field support, survey systems, dashboards</span></div></li><li>{svg("pin")}<div><b>Based</b><span>{e(S["location"])}</span></div></li></ul></aside></div></section>'''
+<aside class="glance dk"><span class="eyebrow">At a glance</span><ul class="sc-r"><li>{svg("layers")}<div><b>Worked across</b><span>Education, agriculture and parenting programmes</span></div></li><li>{svg("bars")}<div><b>Methods</b><span>MEL, RCT field support, survey systems, dashboards</span></div></li><li>{svg("pin")}<div><b>Based</b><span>{e(S["location"])}</span></div></li></ul></aside></div></div></section>'''
 
 
 def areas_cards():
@@ -133,7 +133,7 @@ def paths(here=False):
 
 
 def home():
-    feat = "".join(card(p) for p in C["projects"][:3])
+    feat = "".join(card(p) for t in C["featured"] for p in C["projects"] if p["title"] == t)
     st = "".join(f'<div><b>{v}</b><span>{l}</span></div>' for v, l in C["stats"])
     pubs = "".join(row(p["title"], p["venue"], p["year"], "&#128196;", p.get("link")) for p in C["pubs"])
     aw = "".join(row(a["title"], a["by"], a["year"], "&#127942;", a.get("link")) for a in C["awards"])
@@ -143,7 +143,7 @@ def home():
 <section class="wrap sec">{sh("What I have worked on", "Education, agriculture and parenting", "Full detail", "work.html", "The settings so far. The questions change, the approach does not: what is working, for whom, and why.")}<div class="agrid">{areas_cards()}</div></section>
 <section class="band"><div class="wrap"><span class="eyebrow">Selected achievements</span><h2>What the work adds up to</h2><div class="stats">{st}</div></div></section>
 <section class="wrap sec alt">{sh("Work with me", "Hiring, a project or a collaboration", "Services", "services.html")}{paths()}</section>
-<section class="wrap sec">{sh("Selected work", "Dashboards, reports and code", "View all projects", "projects.html")}<div class="grid">{feat}</div></section>
+<section class="wrap sec">{sh("Selected work", "Dashboards, reports and code", "View all projects", "projects.html")}<div class="grid g3">{feat}</div></section>
 <section class="wrap sec alt">{sh("From the field", "Fieldwork, camps and conferences", "View gallery", "gallery.html")}<div class="strip">{strip}</div></section>
 <section class="wrap sec cols two"><div><span class="eyebrow">Publications</span><h3>Papers and reports</h3><ul class="rows">{pubs}</ul></div><div><span class="eyebrow">Recognition</span><h3>Awards and funding</h3><ul class="rows">{aw}</ul></div>
 </section>'''
@@ -153,9 +153,10 @@ def work():
     camps = ""
     for n, w, t in C["camps"]:
         l = C["camps_link"].get(n)
-        nm = f'<a href="{l}">{e(n)}</a>' if l else e(n)
+        nm = f'<a href="{l}"{" target=_blank rel=noopener" if l.startswith("http") else ""}>{e(n)}</a>' if l else e(n)
         camps += f'<li><b>{nm}</b><small>{e(w)}</small>{f"<em>{t}</em>" if t else ""}</li>'
     frn = "".join(f'<li><b>{e(x[0])}</b>{f"<em>{x[1]}</em>" if x[1] else ""}<small>{e(x[2])}</small>{f"<a class=more href={x[3]}>{x[4] if len(x) > 4 else "Read the report"} &rarr;</a>" if len(x) > 3 else ""}</li>' for x in C["frns"])
+    dl = lambda k: "".join(f'<li><a href="{u}"{" target=_blank rel=noopener" if u.startswith("http") else ""}>{e(t)}</a></li>' for t, u in C["docs"][k])
     fund = "".join(f"<span>{e(x)}</span>" for x in C["funders"])
     return f'''<section class="wrap sec"><h1 class="pt">Work so far</h1><p class="lede">Where I have worked, what I did, and what came out of it. These are the settings so far, not the limit of what the methods can do.</p>
 <nav class="jump"><a class="edu" href="#education">Education</a><a class="agri" href="#agriculture">Agriculture</a><a class="par" href="#parenting">Parenting Initiative</a></nav></section>
@@ -163,27 +164,27 @@ def work():
 <p>I work mainly as a volunteer with the Africa Maths Initiative (AMI). At each camp I create hands-on, gamified maths lessons and facilitate them with learners. I also help measure what the camps achieve.</p></div>
 <div class="wgrid"><div><h3>Camps I have taken part in</h3><ul class="chips">{camps}<li><b>And others</b><small>Across Kenya and Tanzania</small></li></ul></div>
 <div><h3>My contribution</h3><ul class="dots"><li>Created and facilitated hands-on, gamified maths lessons</li><li>Designed data collection tools for baseline and endline studies</li><li>Analysed the data and contributed to camp reports</li><li>Presented the AMI camps at the AFRICME7 conference, Johannesburg</li></ul>
-<h3>Outputs</h3><ul class="dots"><li>Two co-authored papers on maths camps</li><li>AFRICME7 proceedings paper on 21 maths camps</li></ul><p><a class="more" href="publications.html">See publications &rarr;</a> &nbsp; <a class="more" href="conference.html">AFRICME7 page &rarr;</a></p></div></div></section>
+<h3>Documentation</h3><ul class="dots docs">{dl("education")}</ul><h3>Outputs</h3><ul class="dots"><li>Two co-authored papers on maths camps</li><li>AFRICME7 proceedings paper on 21 maths camps</li></ul><p><a class="more" href="publications.html">See publications &rarr;</a> &nbsp; <a class="more" href="conference.html">AFRICME7 page &rarr;</a></p></div></div></section>
 <section class="wrap sec wsec agri" id="agriculture"><div class="whead"><span class="area agri">Kenya Agroecology Hub partnership</span><h2>Agriculture</h2>
 <p>In collaboration with the Kenya Agroecology Hub, I support Farmer Research Networks (FRNs) and CRFS grantees in western Kenya. I have directly supported 10 partner organisations working in agroecology.</p></div>
 <div class="wgrid"><div><h3>Where it started</h3><p>{e(C["pilot"])} <a class="more" href="{C["pilot_link"]}">Read the pilot report &rarr;</a></p><h3>Farmer-led research I have supported</h3><ul class="chips">{frn}</ul><h3>Funded by</h3><div class="tags big">{fund}</div></div>
 <div><h3>My role in each study</h3><ul class="dots"><li>Designing data collection tools in KoboCollect</li><li>Training data collectors</li><li>Preparing field protocols</li><li>Data cleaning and analysis</li><li>Creating dashboards in Python, Excel and R Shiny</li></ul>
-<h3>See the work</h3><p><a class="more" href="projects.html">Dashboards, reports and code &rarr;</a></p></div></div></section>
+<h3>Documentation</h3><ul class="dots docs">{dl("agriculture")}</ul><h3>See the work</h3><p><a class="more" href="projects.html">Dashboards, reports and code &rarr;</a></p></div></div></section>
 <section class="wrap sec wsec par" id="parenting"><div class="whead"><span class="area par">Global Parenting Initiative</span><h2>Parenting Initiative</h2>
-<p>I supported the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania, part of the Global Parenting Initiative. My engagement lasted three months.</p></div>
+<p>I supported the ParentApp for Teens randomised controlled trial in Mwanza, Tanzania, part of the Global Parenting Initiative, working in collaboration with the National Institute for Medical Research (NIMR), Mwanza Centre. My engagement lasted three months.</p></div>
 <div class="wgrid"><div><h3>My contribution</h3><ul class="dots"><li>Supported the field team to obtain consent forms from caregivers</li><li>Followed up with participants and documented the challenges they had using the ParentApp on their phones</li><li>Resolved problems where possible so participants could keep taking part</li></ul></div>
-<div><h3>Why it matters</h3><p>Trial data is only as good as participation. Careful consent, follow-up and problem solving in the field keep the sample engaged and the data complete.</p></div></div></section>'''
+<div><aside class="partner dk"><span class="eyebrow">Research partner</span><h3>National Institute for Medical Research</h3><p>Mwanza Centre, Tanzania</p><p class="pn">The ParentApp for Teens trial was carried out in collaboration with NIMR.</p></aside></div></div></section>'''
 
 
 def projects():
-    return f'''<section class="wrap sec"><h1 class="pt">Projects</h1><p class="lede">Dashboards, reports and code, each linked to the live version or full document.</p>
-{tabs([("all", "All"), ("dashboard", "Dashboards"), ("report", "Reports"), ("code", "Data &amp; Code")])}<div class="grid">{"".join(card(p) for p in C["projects"])}</div></section>'''
+    return f'''<section class="wrap sec"><h1 class="pt">Projects</h1><p class="lede">Each one is linked to the live version or the full document.</p>
+{tabs([("all", "All"), ("dashboard", "Dashboards"), ("report", "Reports"), ("code", "Data &amp; Code")])}<div class="grid g3">{"".join(card(p) for p in C["projects"])}</div></section>'''
 
 
 def pubs():
     r = "".join(row(p["title"], p["venue"], p["year"], "&#128196;", p.get("link")) for p in C["pubs"])
     return f'''<section class="wrap sec"><h1 class="pt">Publications</h1><p class="lede">Conference presentations, accepted papers and research reports.</p><ul class="rows big">{r}</ul>
-<h2 style="margin-top:40px">Reports</h2><div class="grid">{"".join(card(p) for p in C["projects"] if p["type"] == "report")}</div></section>'''
+<h2 style="margin-top:40px">Reports</h2><div class="grid g3">{"".join(card(p) for p in C["projects"] if p["type"] == "report")}</div></section>'''
 
 
 def about():

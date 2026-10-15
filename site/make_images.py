@@ -55,3 +55,6 @@ def slides(front, back, out):
 report("/home/claude/fig2/t1-01.png", "/home/claude/fig2/t6-06.png", "assets/card-tephrosia-report.jpg")
 report("/home/claude/fig2/m15-15.png", "/home/claude/fig2/m17-17.png", "assets/card-migori-report.jpg")
 slides("/home/claude/fig2/s1-01.png", "/home/claude/fig2/s6-06.png", "assets/card-fermented-feeds.jpg")
+
+report("/home/claude/fig2/mc1-01.png", "/home/claude/fig2/mc2-02.png", "assets/card-math-camp-report.jpg")
+report("/home/claude/fig2/wk1-01.png", "/home/claude/fig2/wk12-12.png", "assets/card-workshop-doc.jpg")

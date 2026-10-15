@@ -223,3 +223,46 @@ h1,h2,h3,h4,.logo b{font-weight:700;letter-spacing:-.02em}
 .hero .hl{font:400 clamp(19px,1.7vw,24px)/1.3 Newsreader,Georgia,serif;color:var(--ink)}
 .hero .sub{font-size:15.5px}
 @media(max-width:900px){.hbody{padding:0 20px 28px;grid-template-columns:1fr;gap:0}.hero .glance{margin-top:6px}.gapt,.team,.scope{margin-top:48px}.hero .cover-text{left:20px}}
+
+/* Compact scale: less "zoomed", more refined proportions */
+body{font-size:14px;line-height:1.6}
+body>header .bar{min-height:58px}.logo b{font-size:17px}.logo span{font-size:12px}nav{font-size:13.5px;gap:20px}
+.btn{font-size:13.5px;padding:8px 18px}.nav .navbtn,nav .navbtn{padding:6px 14px}
+.sec{padding:40px 20px}.wrap{max-width:1160px}
+.pt{font-size:clamp(30px,3.3vw,42px)}.phead{margin:-40px -20px 28px;padding:38px 20px 28px}.phead .lede{margin-top:8px}
+.sh h2{font-size:clamp(24px,2.4vw,32px)}.lede{font-size:clamp(16px,1.25vw,18px)}
+.cb h3{font-size:19px}.cb p{font-size:13px}.path h3{font-size:21px}.pillar h3{font-size:19px}.path p,.cb .dots{font-size:13.5px}
+.steps b{font-size:18px}.steps li:before{font-size:32px}.team h2{font-size:clamp(24px,2.4vw,32px)}.scope .sc-l h3{font-size:clamp(20px,2vw,26px)}
+.band h2{font-size:clamp(24px,2.4vw,30px)}.stats b{font-size:30px}.stats span{font-size:12.5px}
+.cols h3{font-size:22px}.gh h2{font-size:22px}.gsec{margin-top:36px}.gi{--h:220px}
+.ic{width:42px;height:42px;margin-bottom:12px}.ic svg{width:20px;height:20px}
+/* Profile: contained card, not full width */
+.hero{background:none;border:0;padding:28px 20px 6px}
+.hero .pc{max-width:1160px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 2px 14px rgba(11,37,69,.07)}
+.hero{--av:clamp(112px,11vw,150px)}
+.hero .cover{height:clamp(170px,20vw,250px)}
+.hero .cover-text{left:32px;top:clamp(16px,2.4vw,30px);max-width:30%}.hero .cover-text b{font-size:clamp(18px,2vw,26px)}
+.hbody{max-width:none;margin:0;padding:0 32px 32px;gap:32px;grid-template-columns:1fr minmax(300px,380px)}
+.hero .pmain h1{font-size:clamp(28px,2.7vw,37px)}.hero .hl{font-size:clamp(16px,1.35vw,19px)}.hero .sub{font-size:14px}.hero .meta{font-size:13px}
+.hero .glance{padding:22px 22px 18px;margin-top:24px}.hero .glance .sc-r li{padding:10px 14px}.sc-r b{font-size:14px}.sc-r span{font-size:12.5px}
+@media(max-width:900px){.hero{padding:12px 12px 0}.hbody{padding:0 18px 22px;grid-template-columns:1fr;gap:0}.hero .cover-text{left:18px}.sec{padding:32px 18px}.phead{margin:-32px -18px 24px;padding:30px 18px 24px}}
+.grid.g3{grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.grid.g3{grid-template-columns:1fr 1fr}}@media(max-width:600px){.grid.g3{grid-template-columns:1fr}}
+
+/* Fluid content width: grows on big screens so the sides never look empty */
+:root{--cw:clamp(1160px,76vw,1440px)}
+.wrap,.hero .pc,.wsec.wrap{max-width:var(--cw)}
+.hero .cover{height:clamp(170px,20vw,300px)}
+@media(min-width:1700px){body{font-size:15px}.lede{font-size:19px}nav{font-size:14px}.gi{--h:250px}}
+@media(min-width:2200px){body{font-size:16px}.lede{font-size:20px}}
+@media(min-width:601px) and (max-width:900px){.acard>img,.acard .ph-icon{aspect-ratio:21/9}.grid.g3>:last-child:nth-child(odd){grid-column:1/-1}.grid.g3>:last-child:nth-child(odd)>img,.grid.g3>:last-child:nth-child(odd)>.tile{aspect-ratio:21/8}}
+
+/* Wider content on laptops, designed margins on big screens */
+:root{--cw:min(94vw,1480px)}
+.docs a{color:var(--blue);font-weight:600;text-decoration:none}.docs a:hover{text-decoration:underline}
+.partner{padding:30px 30px 26px}.partner h3{color:#fff;font-size:24px;margin:2px 0 6px;line-height:1.15}.partner p{margin:0 0 8px;color:#cfdcee}.partner .pn{font-size:13px;color:#b9cbe3;margin-top:14px;border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+@media(min-width:1100px){
+ body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:repeating-radial-gradient(circle at -3% 24%,transparent 0 110px,rgba(11,37,69,.07) 110px 112px),repeating-radial-gradient(circle at 103% 72%,transparent 0 110px,rgba(200,150,47,.13) 110px 112px);
+  -webkit-mask-image:linear-gradient(90deg,#000 0,transparent 20%,transparent 80%,#000 100%);mask-image:linear-gradient(90deg,#000 0,transparent 20%,transparent 80%,#000 100%)}}
+.chips li b{padding-right:64px}
