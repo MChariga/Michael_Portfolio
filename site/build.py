@@ -106,13 +106,14 @@ def page(fn, title, desc, body, og="og.jpg", scripts=(), extra_ld=None, preload=
 
 
 def profile():
-    return f'''<section class="hero"><div class="pc"><div class="cover"><img src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="Maths camp learners, a farmer interview in the field and AFRICME7 delegates" fetchpriority="high" decoding="async"><div class="cover-text"><small>Research &middot; Evidence &middot; Data</small><b>Evidence that helps programmes learn.</b><span>Based in Nairobi</span></div></div>
-<div class="hbody"><div class="pl"><img class="avatar" src="assets/profile.jpg" width="360" height="360" alt="Portrait of {e(S["full"])}">
-<div class="pmain"><h1>{S["full"]}</h1><p class="hl">{e(S["headline"])}</p><p class="sub">{e(S["sub"])}</p>
+    return f'''<section class="hero"><div class="pc"><div class="cover"><img class="cv-img" src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="" fetchpriority="high" decoding="async">
+<div class="cover-in"><img class="avatar" src="assets/profile.jpg" width="360" height="360" alt="Portrait of {e(S["full"])}">
+<div class="cover-text"><span class="eyebrow">Research &middot; Evaluation &middot; Data systems</span><b>Evidence that helps programmes learn.</b></div></div></div>
+<div class="hbody"><div class="pmain"><h1>{S["full"]}</h1><p class="hl">{e(S["headline"])}</p><p class="sub">{e(S["sub"])}</p>
 <p class="meta">{e(S["location"])} &middot; <a href="mailto:{S["email"]}" data-mail>Contact info</a> &middot; <a href="{S["github"]}">GitHub</a> &middot; <a href="{S["linkedin"]}">LinkedIn</a></p>
 <p class="open"><span></span>{e(S["open_to"])}</p>
-<div class="btns"><a class="btn" href="book.html">Book a call</a><a class="btn o" href="cv.html">View CV</a><a class="btn o" href="{S["cv"]}" download>Download CV</a></div></div></div>
-<aside class="glance dk"><span class="eyebrow">At a glance</span><ul class="sc-r"><li>{svg("layers")}<div><b>Worked across</b><span>Education, agriculture and parenting programmes</span></div></li><li>{svg("bars")}<div><b>Methods</b><span>MEL, RCT field support, survey systems, dashboards</span></div></li><li>{svg("pin")}<div><b>Based</b><span>{e(S["location"])}</span></div></li></ul></aside></div></div></section>'''
+<div class="btns"><a class="btn" href="book.html">Book a call</a><a class="btn o" href="cv.html">View CV</a><a class="btn o" href="{S["cv"]}" download>Download CV</a></div></div>
+<aside class="glance dk"><span class="eyebrow">At a glance</span><ul class="gl"><li>{svg("layers")}<p><b>Worked across</b>Education, agriculture, parenting</p></li><li>{svg("bars")}<p><b>Methods</b>MEL, RCTs, surveys, dashboards</p></li><li>{svg("pin")}<p><b>Based</b>{e(S["location"])}</p></li></ul></aside></div></div></section>'''
 
 
 def areas_cards():

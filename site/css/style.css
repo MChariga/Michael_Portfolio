@@ -270,3 +270,27 @@ body>header .bar{min-height:58px}.logo b{font-size:17px}.logo span{font-size:12p
 /* Smaller portrait, and a cover that shows photos (not empty navy) on phones */
 .hero{--av:clamp(104px,9.5vw,136px)}
 @media(max-width:760px){.hero{--av:92px}.hero .cover{height:clamp(130px,34vw,200px)}.hero .cover img{object-position:72% 50%}.hero .avatar{border-width:4px}.hero .pmain{margin-top:10px}}
+
+/* Banner: photos dimmed under a navy wash, portrait and tagline inside it */
+.hero .cover{position:relative;height:auto;min-height:clamp(210px,21vw,290px);display:flex;align-items:center;border-bottom:3px solid var(--gold);background:#0b2545;overflow:hidden}
+.hero .cover .cv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero .cover:after{content:"";position:absolute;inset:0;z-index:1;background:
+ repeating-radial-gradient(circle at 96% 130%,transparent 0 70px,rgba(255,255,255,.05) 70px 72px),
+ linear-gradient(95deg,rgba(7,26,52,.97) 0%,rgba(9,32,64,.92) 36%,rgba(13,44,86,.8) 72%,rgba(18,58,108,.72) 100%)}
+.cover-in{position:relative;z-index:2;display:flex;align-items:center;gap:clamp(20px,2.6vw,38px);padding:30px 36px;width:100%}
+.hero .avatar{margin:0;flex:none;width:var(--av);height:var(--av);border:4px solid rgba(255,255,255,.95);box-shadow:0 6px 22px rgba(0,0,0,.35)}
+.hero .cover-text{position:static;display:flex;flex-direction:column;gap:2px;max-width:640px;color:#fff}
+.hero .cover-text .eyebrow{color:#e3b85a;margin:0}.hero .cover-text .eyebrow:after{margin:10px 0 14px}
+.hero .cover-text b{font:700 clamp(24px,3vw,42px)/1.08 Newsreader,Georgia,serif;letter-spacing:-.025em;color:#fff;max-width:14em}
+.hero{--av:clamp(112px,10.5vw,156px)}
+.hero .hbody{padding:26px 36px 30px;align-items:start;gap:36px}
+.hero .pmain{margin-top:0}
+/* Compact glance card */
+.hero .glance{margin-top:4px;padding:18px 22px 14px;border-radius:14px}
+.hero .glance .eyebrow{margin:0}.hero .glance .eyebrow:after{margin:8px 0 8px}
+.gl{list-style:none;margin:0;padding:0}.gl li{display:flex;gap:12px;align-items:center;padding:9px 0;border-top:1px solid rgba(255,255,255,.14)}
+.gl svg{flex:none;width:30px;height:30px;padding:6px;border-radius:50%;border:1.3px solid #e3b85a;fill:none;stroke:#e3b85a;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.gl p{margin:0;font-size:12.5px;line-height:1.35;color:#cfdcee}.gl b{display:block;font-size:13px;color:#fff}
+@media(max-width:900px){.hero .hbody{padding:20px 18px 22px;gap:18px}.cover-in{padding:22px 18px}}
+@media(max-width:760px){.hero{--av:84px}.hero .cover{min-height:150px}.hero .cover-text .eyebrow{font-size:10px;letter-spacing:.14em}.hero .cover-text .eyebrow:after{margin:6px 0 8px}.hero .cover-text b{font-size:19px}.cover-in{gap:14px;padding:20px 16px}.hero .avatar{border-width:3px}}
+.hero .hbody{padding-bottom:20px}.hero .pmain .btns{margin-bottom:0}
