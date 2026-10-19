@@ -83,7 +83,7 @@ def tabs(items):
 def page(fn, title, desc, body, og="og.jpg", scripts=(), extra_ld=None, preload=""):
     nav = "".join(f'<a href="{h}"{" aria-current=page" if h == fn else ""}>{t}</a>' for t, h in PAGES) + f'<a class="navbtn" href="book.html">Book a call</a>'
     person = {"@type": "Person", "@id": S["url"] + "/#me", "name": S["full"], "jobTitle": S["headline"], "url": S["url"], "image": f'{S["url"]}/assets/profile.webp',
-              "email": S["email"], "sameAs": [S["github"], S["linkedin"]], "address": {"@type": "PostalAddress", "addressLocality": "Kakamega", "addressCountry": "KE"},
+              "email": S["email"], "sameAs": [S["github"], S["linkedin"]], "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"},
               "knowsAbout": ["Monitoring and evaluation", "Research methods", "Survey design", "Dashboards", "R Shiny", "KoboToolbox", "Agroecology", "Mathematics education"]}
     graph = [person, {"@type": "WebSite", "url": S["url"], "name": S["full"], "publisher": {"@id": S["url"] + "/#me"}}] + ([extra_ld] if extra_ld else [])
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, separators=(",", ":"))
@@ -106,7 +106,7 @@ def page(fn, title, desc, body, og="og.jpg", scripts=(), extra_ld=None, preload=
 
 
 def profile():
-    return f'''<section class="hero"><div class="pc"><div class="cover"><img src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="Maths camp learners, a farmer interview in the field and AFRICME7 delegates" fetchpriority="high" decoding="async"><div class="cover-text"><small>Research &middot; Evidence &middot; Data</small><b>Evidence that helps programmes learn.</b><span>Kenya &middot; Tanzania</span></div></div>
+    return f'''<section class="hero"><div class="pc"><div class="cover"><img src="assets/cover.jpg" srcset="assets/cover-1200.jpg 1200w, assets/cover.jpg 2000w" sizes="100vw" width="2000" height="500" alt="Maths camp learners, a farmer interview in the field and AFRICME7 delegates" fetchpriority="high" decoding="async"><div class="cover-text"><small>Research &middot; Evidence &middot; Data</small><b>Evidence that helps programmes learn.</b><span>Based in Nairobi</span></div></div>
 <div class="hbody"><div class="pl"><img class="avatar" src="assets/profile.jpg" width="360" height="360" alt="Portrait of {e(S["full"])}">
 <div class="pmain"><h1>{S["full"]}</h1><p class="hl">{e(S["headline"])}</p><p class="sub">{e(S["sub"])}</p>
 <p class="meta">{e(S["location"])} &middot; <a href="mailto:{S["email"]}" data-mail>Contact info</a> &middot; <a href="{S["github"]}">GitHub</a> &middot; <a href="{S["linkedin"]}">LinkedIn</a></p>
@@ -161,8 +161,8 @@ def work():
     return f'''<section class="wrap sec"><h1 class="pt">Work so far</h1><p class="lede">Where I have worked, what I did, and what came out of it. These are the settings so far, not the limit of what the methods can do.</p>
 <nav class="jump"><a class="edu" href="#education">Education</a><a class="agri" href="#agriculture">Agriculture</a><a class="par" href="#parenting">Parenting Initiative</a></nav></section>
 <section class="wrap sec wsec edu" id="education"><div class="whead"><span class="area edu">Volunteer, Africa Maths Initiative</span><h2>Education</h2>
-<p>I work mainly as a volunteer with the Africa Maths Initiative (AMI). At each camp I create hands-on, gamified maths lessons and facilitate them with learners. I also help measure what the camps achieve.</p></div>
-<div class="wgrid"><div><h3>Camps I have taken part in</h3><ul class="chips">{camps}<li><b>And others</b><small>Across Kenya and Tanzania</small></li></ul></div>
+<p>I work mainly as a volunteer with the Africa Maths Initiative (AMI). At each camp I create hands-on, gamified maths lessons and facilitate them with learners. I also help measure what the camps achieve. The team has run 26 camps since 2022.</p></div>
+<div class="wgrid"><div><h3>Camps I have taken part in</h3><ul class="chips">{camps}<li><b>And others</b><small>Across East Africa</small></li></ul></div>
 <div><h3>My contribution</h3><ul class="dots"><li>Created and facilitated hands-on, gamified maths lessons</li><li>Designed data collection tools for baseline and endline studies</li><li>Analysed the data and contributed to camp reports</li><li>Presented the AMI camps at the AFRICME7 conference, Johannesburg</li></ul>
 <h3>Documentation</h3><ul class="dots docs">{dl("education")}</ul><h3>Outputs</h3><ul class="dots"><li>Two co-authored papers on maths camps</li><li>AFRICME7 proceedings paper on 21 maths camps</li></ul><p><a class="more" href="publications.html">See publications &rarr;</a> &nbsp; <a class="more" href="conference.html">AFRICME7 page &rarr;</a></p></div></div></section>
 <section class="wrap sec wsec agri" id="agriculture"><div class="whead"><span class="area agri">Kenya Agroecology Hub partnership</span><h2>Agriculture</h2>
@@ -279,7 +279,7 @@ pages = [("index.html", f'{S["name"]}: Research, Evaluation & Data Systems Speci
          ("work.html", "Work so far: education, agriculture and parenting", "Maths camps, farmer research networks and a parenting trial: what I did, the methods used and what came out of each.", work(), {}),
          ("projects.html", "Projects: dashboards, reports and code", "R Shiny and Streamlit dashboards, evaluation reports and data pipelines for agroecology and education programmes.", projects(), {}),
          ("publications.html", "Publications and reports", "Conference papers, accepted articles and research reports on maths education and farmer-led research.", pubs(), {}),
-         ("gallery.html", "Gallery: fieldwork, maths camps and conferences", "Photos from maths camps, farmer fieldwork and conferences across Kenya and Tanzania.", gallery(), {"scripts": ("gallery.js",)}),
+         ("gallery.html", "Gallery: fieldwork, maths camps and conferences", "Photos from maths camps, farmer fieldwork and conferences across East Africa.", gallery(), {"scripts": ("gallery.js",)}),
          ("about.html", "About", "Research and evaluation specialist with five years across Kenya and Tanzania in MEL systems, participatory research and data-driven programme design.", about(), {}),
          ("services.html", "Work with me: services and consultancy", "MEL design, survey systems, dashboards, analysis and training. Hire me, start a project, or join the consultancy team.", services(), {"extra_ld": ld_services}),
          ("cv.html", "Curriculum vitae", "CV of " + S["full"] + ", research, evaluation and data systems specialist. Read online or download the PDF.", cv(), {}),
@@ -304,6 +304,7 @@ for fn, t, d, b, kw in pages:
 nf = page("404.html", "Page not found", "Page not found.", '<section class="wrap sec"><h1 class="pt">Page not found</h1><p class="lede">That page does not exist. Try the <a href="index.html">home page</a> or the <a href="projects.html">projects</a>.</p></section>').replace('content="index,follow,max-image-preview:large"', 'content="noindex"')
 (OUT / "404.html").write_text(finish(nf), encoding="utf-8")
 today = datetime.date.today().isoformat()
+(OUT / ".nojekyll").write_text("")
 (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {S['url']}/sitemap.xml\n")
 (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{S['url']}/{'' if h == 'index.html' else h}</loc><lastmod>{today}</lastmod></url>" for _, h in ALL) + "</urlset>")
 (OUT / "_headers").write_text("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: SAMEORIGIN\n/css/*\n  Cache-Control: public, max-age=31536000, immutable\n/js/*\n  Cache-Control: public, max-age=31536000, immutable\n/assets/*\n  Cache-Control: public, max-age=2592000\n/reports/*\n  Cache-Control: public, max-age=604800\n")

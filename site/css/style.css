@@ -266,3 +266,7 @@ body>header .bar{min-height:58px}.logo b{font-size:17px}.logo span{font-size:12p
   background:repeating-radial-gradient(circle at -3% 24%,transparent 0 110px,rgba(11,37,69,.07) 110px 112px),repeating-radial-gradient(circle at 103% 72%,transparent 0 110px,rgba(200,150,47,.13) 110px 112px);
   -webkit-mask-image:linear-gradient(90deg,#000 0,transparent 20%,transparent 80%,#000 100%);mask-image:linear-gradient(90deg,#000 0,transparent 20%,transparent 80%,#000 100%)}}
 .chips li b{padding-right:64px}
+
+/* Smaller portrait, and a cover that shows photos (not empty navy) on phones */
+.hero{--av:clamp(104px,9.5vw,136px)}
+@media(max-width:760px){.hero{--av:92px}.hero .cover{height:clamp(130px,34vw,200px)}.hero .cover img{object-position:72% 50%}.hero .avatar{border-width:4px}.hero .pmain{margin-top:10px}}

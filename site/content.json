@@ -3,16 +3,16 @@
   "name": "Michael Chariga",
   "full": "Okoth Michael Chariga",
   "tagline": "Research, Data & Evidence",
-  "url": "https://YOUR-DOMAIN",
+  "url": "https://mchariga.github.io/Michael_Portfolio",
   "email": "okothmichael018@gmail.com",
   "github": "https://github.com/MChariga",
   "linkedin": "https://www.linkedin.com/in/michael-chariga-b654a61a1/",
-  "location": "Kakamega, Kenya",
+  "location": "Nairobi, Kenya",
   "cv": "Michael_Chariga_CV_Oct_2026.pdf",
   "headline": "Research, Evaluation & Data Systems Specialist",
-  "intro": "Research, evaluation and data systems specialist with five years of experience across Kenya and Tanzania. I turn programme questions into field-ready tools, trained data teams, clean datasets and dashboards, and write findings that decision makers can use.",
-  "about": "I am a research and evaluation specialist with five years of experience in monitoring, evaluation and learning (MEL) systems, participatory research and data-driven programme design across Kenya and Tanzania. I work across the whole cycle, from instruments and sampling to training field teams, building data quality systems and dashboards, and writing findings for non-technical readers. So far that work has been in education, agriculture and parenting programmes, and I am keen to apply the same methods to new questions and sectors.",
-  "sub": "I design the evidence behind programmes: research methods, data systems and dashboards that teams can actually use.",
+  "intro": "Research, evaluation and data systems specialist based in Nairobi. I work with data to understand what is happening in programmes, identify what needs to improve, and generate evidence that supports better decisions and results.",
+  "about": "I work with data to understand what is happening in programmes, identify what needs to improve, and generate evidence that supports better decisions and results. I am a research and evaluation specialist with five years of experience in monitoring, evaluation and learning (MEL) systems, participatory research and data-driven programme design across Kenya and Tanzania. I work across the whole cycle, from instruments and sampling to training field teams, building data quality systems and dashboards, and writing findings for non-technical readers. So far that work has been in education, agriculture and parenting programmes, and I am keen to apply the same methods to new questions and sectors.",
+  "sub": "I work with data to understand what is happening in programmes, identify what needs to improve, and generate evidence that supports better decisions and results.",
   "cv_view": "Michael_Chariga_CV_Oct_2026.pdf",
   "open_to": "Open to roles, consultancy and collaborations",
   "org": "INNODEMS"
@@ -27,8 +27,8 @@
    "farmers tracked on R Shiny dashboards"
   ],
   [
-   "13",
-   "maths camps evaluated, 3,000+ participants"
+   "26",
+   "maths camps run since 2022 across East Africa"
   ],
   [
    "2",
@@ -293,7 +293,7 @@
    "color": "edu",
    "img": "edu.jpg",
    "tag": "Africa Maths Initiative, volunteer",
-   "blurb": "Hands-on, gamified maths camps for learners across Kenya and Tanzania, with evaluation built in from the start.",
+   "blurb": "Hands-on, gamified maths camps for learners across East Africa, with evaluation built in from the start.",
    "points": [
     "Designed and facilitated gamified maths lessons at residential and community camps",
     "Built baseline and endline tools, analysed the data and contributed to camp reports",
@@ -330,32 +330,32 @@
  "camps": [
   [
    "STEM BootCamp with Project Inspire",
-   "Arusha, Tanzania",
+   "Arusha",
    ""
   ],
   [
    "Kongoni Community Library camp",
-   "Likuyani, Kakamega, Kenya",
+   "Likuyani, Kakamega",
    "Twice"
   ],
   [
    "Nyahera Girls High School",
-   "Homa Bay, Kenya",
+   "Homa Bay",
    ""
   ],
   [
    "Nyarongi community maths camp",
-   "Nyarongi, Kenya",
+   "Nyarongi",
    "Twice"
   ],
   [
    "Rombo Girls High School",
-   "Oloitokitok, Kenya",
+   "Oloitokitok",
    ""
   ],
   [
    "Good Shepherd Minor Seminary",
-   "Marala, Samburu, Kenya",
+   "Marala, Samburu",
    ""
   ]
  ],
@@ -434,12 +434,12 @@
   {
    "file": "g30.jpg",
    "category": "Education",
-   "caption": "STEM BootCamp with Project Inspire, Arusha, Tanzania"
+   "caption": "STEM BootCamp with Project Inspire, Arusha"
   },
   {
    "file": "g29.jpg",
    "category": "Education",
-   "caption": "At NM-AIST, Arusha, Tanzania"
+   "caption": "At NM-AIST, Arusha"
   },
   {
    "file": "g27.jpg",
@@ -576,7 +576,7 @@
    {
     "role": "Research & Impact Lead",
     "org": "INNODEMS",
-    "place": "Kakamega, Kenya",
+    "place": "Kenya",
     "period": "Present",
     "bullets": [
      "Lead MEL and research support across agroecology, education and parenting programmes in Kenya and Tanzania, coordinating multiple partner organisations",
@@ -592,10 +592,11 @@
    {
     "role": "Volunteer Facilitator and Evaluation Support",
     "org": "Africa Maths Initiative (AMI)",
-    "place": "Kenya and Tanzania",
+    "place": "East Africa",
     "period": "Ongoing",
     "bullets": [
      "Created and facilitated hands-on, gamified maths lessons at camps including the STEM BootCamp with Project Inspire (Arusha), Kongoni (twice), Nyahera Girls, Nyarongi (twice), Rombo Girls and Good Shepherd Minor Seminary",
+     "Part of the Africa Maths Initiative team that has run 26 maths camps since 2022",
      "Designed baseline and endline data collection tools, analysed camp data and contributed to camp reports, covering 13 camps and over 3,000 participants",
      "Co-authored two maths camp papers and presented the AMI camps at the AFRICME7 conference in Johannesburg",
      "Supported international volunteers with travel logistics and local planning"
@@ -659,7 +660,7 @@
  "gallery_sections": {
   "Education": [
    "Maths camps and workshops",
-   "Hands-on, gamified maths camps and facilitation across Kenya and Tanzania."
+   "Hands-on, gamified maths camps and facilitation across East Africa."
   ],
   "Agriculture": [
    "Fieldwork with farmers",
